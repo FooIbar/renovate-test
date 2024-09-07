@@ -4,19 +4,19 @@
   ],
   "packageRules": [
     {
+      "description": "Disable updates for SNAPSHOTs",
+      "matchDatasources": [
+        "maven"
+      ],
+      "allowedVersions": "!/SNAPSHOT$/"
+    },
+    {
       "groupName": "Compose BOM",
       "matchDepNames": [
         "androidx.compose:compose-bom"
       ],
       "allowedVersions": "/^.*-alpha\\d*$/",
       "ignoreUnstable": false
-    },
-    {
-      "description": "Disable updates for SNAPSHOTs",
-      "matchDatasources": [
-        "maven"
-      ],
-      "allowedVersions": "!/SNAPSHOT$/"
     }
   ]
 }
