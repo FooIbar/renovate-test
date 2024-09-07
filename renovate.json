@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Compose BOM",
+      "matchDepNames": [
+        "androidx.compose:compose-bom"
+      ],
+      "allowedVersions": "/^.*-alpha\\d*$/",
+      "ignoreUnstable": false
+    }
+  ]
+}
