@@ -10,6 +10,13 @@
       ],
       "allowedVersions": "/^.*-alpha\\d*$/",
       "ignoreUnstable": false
+    },
+    {
+      "description": "Disable updates for SNAPSHOTs",
+      "matchDatasources": [
+        "maven"
+      ],
+      "allowedVersions": "!/SNAPSHOT$/"
     }
   ]
 }
