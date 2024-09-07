@@ -8,7 +8,6 @@
       "matchDepNames": [
         "androidx.compose:compose-bom"
       ],
-      "allowedVersions": "/^.*-alpha\\d*$/",
       "ignoreUnstable": false
     }
   ]
