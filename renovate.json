@@ -2,6 +2,16 @@
   "extends": [
     "config:base"
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["(^|/)CMakeLists\\.txt$"],
+      "matchStrings": [
+        "(?<depName>\\S*)\\s*GIT_REPOSITORY https://(?<datasource>.*?)\\.com/(?<packageName>.*?)\\.git\\s*GIT_TAG (?<currentValue>\\S*)"
+      ],
+      "datasourceTemplate": "{{{datasource}}}-tags"
+    }
+  ],
   "packageRules": [
     {
       "description": "Disable updates for SNAPSHOTs",
