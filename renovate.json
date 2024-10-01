@@ -23,7 +23,7 @@
     "chrome": {
       "defaultRegistryUrlTemplate": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json",
       "transformTemplates": [
-        "{\"releases\":[{\"version\": $$.(channels.Stable.version)}]}"
+        "{\"releases\":[{\"version\": $$.(data.channels.Stable.version)}]}"
       ]
     }
   },
