@@ -17,7 +17,7 @@
       "matchStrings": ["(?<currentValue>\\S+)"],
       "depNameTemplate": "chrome",
       "datasourceTemplate": "custom.chrome",
-	  "extractVersionTemplate": "^(?<version>\\d+)\\."
+	  "extractVersionTemplate": "^(?<version>\\d+)"
     }
   ],
   "customDatasources": {
@@ -52,7 +52,7 @@
       "matchDepNames": [
         "nettle"
       ],
-	  "extractVersion": "^nettle_(?<version>[^_]+)"
+	  "extractVersion": "^nettle_(?<version>[^_]+)_release"
     }
   ]
 }
