@@ -17,7 +17,7 @@
       "matchStrings": ["(?<currentValue>\\S+)"],
       "depNameTemplate": "chrome",
       "datasourceTemplate": "custom.chrome",
-	  "versioningTemplate": "regex:^(?<major>\\d+)\\."
+	  "extractVersionTemplate": "^(?<version>\\d+)\\."
     }
   ],
   "customDatasources": {
