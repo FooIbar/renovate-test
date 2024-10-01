@@ -27,6 +27,12 @@
       ]
     }
   },
+  "logLevelRemap": [
+    {
+      "matchMessage": "/^Custom manager fetcher/",
+      "newLogLevel": "info"
+    }
+  ],
   "packageRules": [
     {
       "description": "Disable updates for SNAPSHOTs",
