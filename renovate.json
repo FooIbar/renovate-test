@@ -21,7 +21,7 @@
   ],
   "customDatasources": {
     "chrome": {
-      "defaultRegistryUrlTemplate": "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions.json",
+      "defaultRegistryUrlTemplate": "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE",
 	  "format": "plain"
     }
   },
