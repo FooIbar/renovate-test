@@ -45,7 +45,7 @@ ExternalProject_Add(
         nettle
         PREFIX nettle
         GIT_REPOSITORY https://gitlab.com/gnutls/nettle.git
-        GIT_TAG nettle_3.9_release
+        GIT_TAG 3.10
         GIT_CONFIG core.autocrlf=input
         CONFIGURE_COMMAND bash ${CURRENT_DIR}/configure_nettle.sh ${NDK_VERSION} ${CMAKE_C_COMPILER_TARGET}
         BUILD_COMMAND bash -c "make libnettle.a CFLAGS='${CMAKE_C_FLAGS}'"
